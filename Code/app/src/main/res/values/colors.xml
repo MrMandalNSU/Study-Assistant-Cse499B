@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    
+    
+    <color name="grey">#F7C3C3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="register">#F1ECEC</color>
+    <color name="google">#F1E7E7</color>
+    <color name="signup">#968F8F</color>
+    <color name="border">#D9D0D0</color>
+    <color name="loginborder">#F8F8F8</color>
+    <color name="lborder">#F8F8F8</color>
+
+    <color name="black">#373331</color>
+    <color name="orange">#D6895E</color>
+
+
+
+
+</resources>

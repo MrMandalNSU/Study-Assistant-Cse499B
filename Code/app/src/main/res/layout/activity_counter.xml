@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F4E1"
+    tools:context=".Counter">
+
+    <Button
+        android:id="@+id/stopwatch_btn"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:foreground="@drawable/stopwatch_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/countdown_btn"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:foreground="@drawable/countdown_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="253dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="CountDown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countdown_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName12"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="253dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="StopWatch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopwatch_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

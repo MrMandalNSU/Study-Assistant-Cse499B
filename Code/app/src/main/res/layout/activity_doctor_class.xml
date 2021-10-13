@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorClass">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="99dp"
+        android:layout_height="25dp"
+        android:text="Doctor Class"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <TextView
+        android:id="@+id/textView3Doc"
+        android:layout_width="286dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/bold"
+        android:text="Welcome to DocTalk"
+        android:textColor="#4E88A3"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/logoutDoc"
+        android:layout_width="89dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/bold"
+        android:onClick="logout"
+        android:text="LOG OUT"
+        android:textColor="#436B8C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Button
+        android:id="@+id/ocr_btnDoc"
+        android:layout_width="231dp"
+        android:layout_height="42dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:text="Scan Prescription"
+        app:layout_constraintBottom_toTopOf="@+id/logoutDoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3Doc"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <Button
+        android:id="@+id/ocr_btnDoc2"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:text="Scan Articles"
+        app:layout_constraintBottom_toTopOf="@+id/logoutDoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3Doc"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <Button
+        android:id="@+id/symptoms_BtnDoc"
+        android:layout_width="175dp"
+        android:layout_height="41dp"
+        android:text="Respond To Patients"
+        app:layout_constraintBottom_toTopOf="@+id/profile_btnDoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ocr_btnDoc"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <Button
+        android:id="@+id/profile_btnDoc"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="48dp"
+        android:text="Your Profile"
+        app:layout_constraintBottom_toTopOf="@+id/logoutDoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ocr_btnDoc"
+        app:layout_constraintVertical_bias="0.776" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

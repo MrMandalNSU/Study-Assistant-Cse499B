@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientClass">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="4dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Profile"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="4dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Profile"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="286dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/bold"
+        android:text="      Study Assistant"
+        android:textColor="#4E88A3"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/bold"
+        android:onClick="logout"
+        android:text="LOG OUT"
+        android:textColor="#436B8C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/ocr_btn"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/baloo"
+        android:foreground="@drawable/scan_logo"
+        android:text="Scan Documents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/profile_btn"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:foreground="@drawable/profile_logo"
+        android:text="Your Profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ocr_btn" />
+
+    <Button
+        android:id="@+id/doc_List"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:foreground="@drawable/booklist_logo"
+        android:text="Book List"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/np_btn"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="45dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/notepad_logo"
+        android:text="NotePad"
+        app:layout_constraintEnd_toStartOf="@+id/doc_List"
+        app:layout_constraintStart_toEndOf="@+id/ocr_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:text="NotePad" />
+
+    <Button
+        android:id="@+id/calculator_btn"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#DC5858"
+        android:foreground="@drawable/calculator_logo"
+        android:onClick="openApp"
+        android:text="Calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc_List" />
+
+    <Button
+        android:id="@+id/gsearch_btn"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:foreground="@drawable/gsearch_logo"
+        app:layout_constraintEnd_toStartOf="@+id/calculator_btn"
+        app:layout_constraintStart_toEndOf="@+id/profile_btn"
+        app:layout_constraintTop_toBottomOf="@+id/np_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="4dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Scanner"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ocr_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="4dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Chatting"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="4dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="ToDo"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName8"
+        app:layout_constraintTop_toBottomOf="@+id/todo_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="45dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="54dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Counter"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counter_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="57dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Notepad"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/np_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="57dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="GSearch"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/gsearch_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="57dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Calculator"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculator_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="57dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="50dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="BookList"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc_List" />
+
+    <Button
+        android:id="@+id/chat_btn"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:foreground="@drawable/chat_logo"
+        android:onClick="openApp2"
+        android:text="Chat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_btn" />
+
+    <Button
+        android:id="@+id/todo_btn"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="40dp"
+        android:foreground="@drawable/todo_logo"
+        android:onClick="openApp1"
+        android:text="Todo"
+        app:layout_constraintStart_toEndOf="@+id/chat_btn"
+        app:layout_constraintTop_toBottomOf="@+id/gsearch_btn" />
+
+    <Button
+        android:id="@+id/counter_btn"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:foreground="@drawable/counter_logo"
+        android:text="counter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculator_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

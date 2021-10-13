@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doctalk">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".booklist"></activity>
+        <activity android:name=".profilepage" />
+        <activity android:name=".Chat" />
+        <activity android:name=".Calculator1" />
+        <activity android:name=".Counter" />
+        <activity android:name=".stopwatch" />
+        <activity android:name=".Countdown" />
+        <activity android:name=".GSearch" />
+        <activity android:name=".Calculator" />
+        <activity android:name=".TextEditor" />
+        <activity android:name=".todoMain" />
+        <activity android:name=".text_recognition2" />
+        <activity android:name=".DoctorProfile" />
+        <activity android:name=".DoctorList" />
+        <activity android:name=".PatientListView" />
+        <activity android:name=".PatientProfile" />
+        <activity android:name=".Profile" />
+        <activity android:name=".DoctorClass" />
+        <activity android:name=".PatientClass" />
+        <activity android:name=".Patient_Info" />
+        <activity android:name=".text_recognition" />
+        <activity
+            android:name=".Splash"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity">
+            <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="ocr" />
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

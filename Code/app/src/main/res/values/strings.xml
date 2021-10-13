@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Study Assistant</string>
+    <string name="right">Right</string>
+    <string name="center">Center</string>
+    <string name="left">Left</string>
+    <string name="clear">Clear</string>
+    <string name="underline">Underline</string>
+    <string name="italic">Italic</string>
+    <string name="bold">Bold</string>
+    <string name="text_editor">Text Editor</string>
+
+    <string-array name="UserType">
+        <item> Doctor </item>
+        <item> Patient </item>
+
+    </string-array>
+
+    <string-array name="diseases">
+
+        <item> acne </item>
+        <item> allergies </item>
+        <item> alzheimer </item>
+        <item> arthritis </item>
+        <item> asthma </item>
+        <item> anxiety </item>
+        <item> anthrax </item>
+        <item> appendicitis </item>
+        <item> aids </item>
+        <item> bronchitis </item>
+        <item> boil </item>
+        <item> chickenpox </item>
+        <item> cholera </item>
+        <item> cancer </item>
+        <item> cold </item>
+        <item> coronavirus </item>
+        <item> cough </item>
+        <item> depression </item>
+        <item> dengue </item>
+        <item> diabetes </item>
+        <item> diphtheria </item>
+        <item> diarrhoea </item>
+        <item> dehydration </item>
+        <item> ebola </item>
+        <item> epilepsy </item>
+        <item> eyesight </item>
+        <item> fever </item>
+        <item> flu </item>
+        <item> gonorrhea </item>
+        <item> headache </item>
+        <item> hiv </item>
+        <item> infertility </item>
+        <item> influenza </item>
+        <item> insomnia </item>
+        <item> itching </item>
+        <item> jaundice </item>
+        <item> leukemia </item>
+        <item> malaria </item>
+        <item> malnutrition </item>
+        <item> measles </item>
+        <item> migraine </item>
+        <item> mumps </item>
+        <item> myopia </item>
+        <item> nausea </item>
+        <item> obesity </item>
+        <item> plague </item>
+        <item> pneumonia </item>
+        <item> rabies </item>
+        <item> rash </item>
+        <item> rickets </item>
+        <item> scurvy </item>
+        <item> sars </item>
+        <item> smallpox </item>
+        <item> syphilis </item>
+        <item> tetanus </item>
+        <item> tonsillitis </item>
+        <item> tiredness </item>
+        <item> tuberculosis </item>
+        <item> tumor </item>
+        <item> ulcer </item>
+        <item> vomiting </item>
+
+    </string-array>
+
+</resources>
